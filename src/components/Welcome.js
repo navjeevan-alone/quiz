@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 function Welcome() {
 	return (
-		<Card style={{ width: "18rem", margin: "1rem auto" }}>
+		<Card style={{ width: "18rem", margin: "1rem auto", textAlign: "center" }}>
 			<Card.Img variant='top' src='img/welcome.png' />
 			<Card.Body>
 				<Card.Title style={{ fontSize: "2rem" }}>Qzee</Card.Title>

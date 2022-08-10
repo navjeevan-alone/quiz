@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+* {
+	font-family: "Assistant", sans-serif;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+	width: 8px;
+	position: absolute;
+}
+::-webkit-scrollbar-track {
+	background: #cccccc;
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: gray;
+}
+
+.navigator {
+	flex: 1 1 1rem;
+	max-width: 25%;
+
+	overflow: hidden;
+	transition: 0.2s;
+}
+.toggle-show {
+	max-width: 0; /*toggle it to show/hide navigator*/
+}
+.question {
+	flex: 1 1 20rem;
+	min-width: 75%;
+	padding-left: 3rem;
+	border-left: 1px solid #dee2e6;
+}
+/* .material-symbols-rounded {
+	font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+} */
+.question .btn i {
+	line-height: 2.2rem;
+}
+.accordion-body {
+	display: flex;
+
+	gap: 0.2rem;
+}
+.ques-badge.badge {
+	height: 3rem;
+	width: 3rem;
+	line-height: 3rem;
+	padding: 0;
+	text-align: center;
+	font-size: 1rem;
+	cursor: pointer;
+}
+span.ques-badge.badge.bg-light {
+	background-image: linear-gradient(
+		45deg,
+		var(--bs-gray-800),
+		var(--bs-gray-800)
+	);
+}
+.ques-badge:is(:hover, :focus) {
+	box-shadow: 0 0 4px rgb(104, 104, 104);
+	box-shadow: 0 0 4px inherit;
+}
+.timer {
+	float: right;
+	background: var(--gray-2);
+	border: 1px solid var(--bs-gray-800);
+	border-radius: 5px;
+	min-width: 10rem;
+	display: flex;
+	gap: 0.3rem;
+	align-items: center;
+	justify-content: center;
+}
