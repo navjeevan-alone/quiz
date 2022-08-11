@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import Question from "./Question";
-import Navigator from "./Navigator";
+import NavigatePanel from "./NavigatePanel";
 function Main() {
 	const [toggleShow, setToggleShow] = useState(true);
 	return (
 		<Container className='my-3 p-2 gap-2 border border-dark rounded-2 d-flex '>
-			<Navigator isShow={toggleShow}></Navigator>
+			<NavigatePanel isShow={toggleShow} />
 			<Button
 				style={{ height: "3rem" }}
 				variant='dark'

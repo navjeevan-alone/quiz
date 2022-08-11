@@ -44,7 +44,7 @@ function Timer() {
 		setIsRunning(isRunning);
 	}, [startMinutes]);
 	return (
-		<Container>
+		<Container className='d-flex justify-content-between'>
 			<h2 className='timer p-1 my-1'>
 				<span className='time'>{hour < 10 ? `0${hour}` : hour}</span>:
 				<span className='time'>{minute < 10 ? `0${minute}` : minute}</span>:

@@ -1,11 +1,15 @@
 import React from "react";
+import NavigateButtons from "./NavigateButtons";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+
 function Question() {
 	let arr = ["option 1", "option 2", "option 3", "option 4"];
 	return (
-		<div className='question p-4 '>
-			<h2>This will be question</h2>
+		<div className='question p-4 pb-2 '>
+			<h2>
+				{" "}
+				<span className='ques-num'>Q.1) </span> This will be question
+			</h2>
 			<hr />
 			<Form>
 				<div className='opt-group d-flex flex-column gap-2 '>
@@ -23,18 +27,7 @@ function Question() {
 					})}
 				</div>
 			</Form>
-			<div className='button-group mt-3 d-flex justify-content-between'>
-				<Button variant='dark' className='rounded-pill'>
-					<i className='material-symbols-rounded'>west</i>
-				</Button>
-				<Button variant='dark' className='rounded-pill'>
-					<i className='material-symbols-rounded'>star</i>
-				</Button>
-
-				<Button variant='primary' className='rounded-pill'>
-					<i className='material-symbols-rounded'>east</i>
-				</Button>
-			</div>
+			<NavigateButtons />
 		</div>
 	);
 }
