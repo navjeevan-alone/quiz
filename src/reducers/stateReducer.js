@@ -4,7 +4,8 @@ export const initialState = {
 	isQuiz: false,
 	isSubmitted: false,
 };
-export const stateReducer = (action, state) => {
+
+export default function stateReducer(state, action) {
 	switch (action.type) {
 		case "loadQues":
 			return state;
@@ -12,5 +13,10 @@ export const stateReducer = (action, state) => {
 			return { ...state, isQuiz: true };
 		case "endQuiz":
 			return { ...state, isQuiz: false, isSubmitted: true };
+		case "run":
+			console.log(state);
+			return state;
+		default:
+			return state;
 	}
-};
+}
